@@ -14,14 +14,14 @@ To load data into the postgres database:
 docker compose up --build
 ```
 ## Description of 'create_tables.sql
-- BEGIN TRANSACTION  denotes the beginning of a transaction / loop,
+- `BEGIN TRANSACTION`  denotes the beginning of a transaction / loop,
 
-- CREATE TABLE yellow_trips : creates a table into our database, here you define the columns and data types.
+- `CREATE TABLE` yellow_trips : creates a table into our database, here you define the columns and data types.
 
-- COPY <table_name> --: copy the table made 
+- `COPY` <table_name> --: copy the table made 
 
-- FROM '<file path>' --: file path for your matching csv file 
+- `FROM` '<file path>' --: file path for your matching csv file 
 
-- DELIMITER ',' CSV HEADER; --: comma seperated, headers kept
+- `DELIMITER` ',' CSV HEADER; --: comma seperated, headers kept
 
-- COMMIT; --: end of transaction / loop
+- `COMMIT`; --: end of transaction / loop
