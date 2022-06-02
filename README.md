@@ -1,4 +1,6 @@
-## Postgres Prefill
+# Postgres Prefill
+
+## Overview
 This setup on start up prefills a postgres database with CSV data. 
 
 ### How To Use
